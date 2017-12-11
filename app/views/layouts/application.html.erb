@@ -20,23 +20,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Craftsy</a>
+      <div class="navbar-brand"><%= link_to "Craftsy", root_path %></div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">About</a></li>
-        <li><a href="#">Shop</a></li>
+        <li><a href="#">Account</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+      	<li><%= link_to 'Add new product', new_product_path %></li>
         <li><a href="#">Sign Up</a></li>
         <li><a href="#">Log In</a></li>
      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+ <%= yield %>
 </div><!-- end container -->
-    <%= yield %>
+   
   </body>
 </html>
