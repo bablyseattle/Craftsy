@@ -5,4 +5,6 @@ class Product < ActiveRecord::Base
   "100x100>" }, default_url: "/images/:style/missing.png"
   validates_attachment_content_type :avatar, content_type: 
   /\Aimage\/.*\z/
+
+  has_many :reviews
 end

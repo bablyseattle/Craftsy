@@ -13,6 +13,8 @@ gem 'rails-ujs'
 gem 'faker', :git => 'git://github.com/stympy/faker.git', :branch => 'master'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'simple_form'
+
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 group :development, :test do

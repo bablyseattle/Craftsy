@@ -17,3 +17,19 @@
   </div>
 
   <% end %>
+
+
+<h3 class="reviews_title">
+  <%= @product.reviews.count %> reviews
+</h3>
+
+<div id="reviews">
+  <%= render :partial => @product.reviews %>
+</div>
+<%= simple_form_for [@product, Review.new]  do |f| %>
+  <div class="field">
+    <%= f.text_area :content, class: "form-control" %>
+  </div>
+  <br>
+  <%= f.submit "Add reviews", class: "btn btn-primary" %>
+<% end %>
