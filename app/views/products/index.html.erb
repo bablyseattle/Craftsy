@@ -2,7 +2,7 @@
   <% @products.each do |product| %>
   <div class="col-sm-6">
     <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="https://iheartcraftythings.com/wp-content/uploads/2017/04/twirling-parrot-craft-2-400x400.jpg" alt="Card image cap">
+      <%= image_tag product.avatar.url(:medium) %>
       <div class="card-block">
         <h4 class="card-title"><%= product.name %></h4>
         <p class="card-text">$ <%= product.price %></p>
