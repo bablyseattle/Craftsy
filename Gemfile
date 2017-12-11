@@ -24,6 +24,9 @@ group :development, :test do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'factory_bot'
+gem 'simplecov', :require => false, :group => :test
+
 end
 
 group :development do
